@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+*{box-sizing:border-box;}
+body{font-family: 'IBM Plex Sans', sans-serif, sans-serif; color:white; font-size:17px; background-color:#dadada; margin-left: 30%;}
+.form_box{display: inline-block; width:600px; padding:10px; background-color:#1a64ee;}
+input{padding:5px;  margin-bottom:5px;}
+input[type="submit"]{border:none; outlin:none; background-color:#270772; color:white;}
+.heading{background-color:#1a64ee; color:white; height:60px; width:100%; line-height:60px; text-align:center;}
+.shadow{
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);}
+.pic{text-align:left; width:33%; float:left; text-indent: 40px;}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.feedbackname{
+  color: #270772;
+}
+
+.btn:hover {
+  background-color: #0aa1e7;
+  color: white;
+}
+
+textarea{
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+</style>
+<body>
+ <div class="form_box shadow">
+ <form method="post" action="feedback.php">
+ <div class="heading">
+   <h1>FEEDBACK FORM</h1>
+ </div>
+ 
+ <br/>
+ <!-- <h3 class = data>1. Name:</h3>
+ <textarea name=" name" rows="1" cols="69"></textarea>
+ <br>
+ <br>
+ <h3>2. Email id:</h3>
+ <textarea name=" email" rows="1" cols="69"></textarea>
+ <br>
+ <br>
+ <h3>3. Contact Number:</h3>
+ <textarea name=" contact" rows="1" cols="69"></textarea>
+ <br>
+ <br> -->
+ <h3>1. Please rate your expirience with the Consultant / Doctor.</h3>
+ <div>
+   <div class="pic">
+     <!-- <img src="bad.png" alt=""> <br/> -->
+     <input type="radio" name="quality" value="5"> Excellent
+   </div>
+   <br>
+   <br>
+   <div class="pic">
+     <!-- <img src="neutral.png" alt=""> <br/> -->
+     <input type="radio" name="quality" value="4"> Good
+   </div>
+   <br>
+   <br>
+   <div class="pic">
+     <!-- <img src="good.png" alt=""> <br/> -->
+     <input type="radio" name="quality" value="3"> Average
+   </div>
+   <br>
+   <br>
+   <div class="pic">
+     <!-- <img src="good.png" alt=""> <br/> -->
+     <input type="radio" name="quality" value="2"> Below Average
+   </div>
+   <br>
+   <br>
+   <div class="pic">
+     <!-- <img src="good.png" alt=""> <br/> -->
+     <input type="radio" name="quality" value="1"> Unaaceptable
+   </div>
+ </div>
+ <br>
+ <br>
+ <h3>2. Do you have any suggestion for us? </h3>
+ <textarea name=" suggestion" rows="5" cols="69" maxlength="200"></textarea>
+ <br>
+ <br>
+  <input class = btn type="submit" name="submit" value="Submit Form">
+</form>
+ </div>
+</body>
+</html>

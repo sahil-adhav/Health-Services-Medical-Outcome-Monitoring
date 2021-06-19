@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<style>
+/* *{box-sizing:border-box;}
+body{font-family: 'IBM Plex Sans', sans-serif, sans-serif; color:white; font-size:17px; background-color:#dadada; margin-left: 30%;}
+.form_box{display: inline-block; width:600px; padding:10px; background-color:#1a64ee;}
+input{padding:5px;  margin-bottom:5px;}
+input[type="submit"]{border:none; outlin:none; background-color:#270772; color:white;}
+.heading{background-color:#1a64ee; color:white; height:60px; width:100%; line-height:60px; text-align:center;}
+.shadow{
+  -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);
+box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.43);}
+.pic{text-align:left; width:33%; float:left; text-indent: 40px;}
+.btn{
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.feedbackname{
+  color: #270772;
+}
+
+.btn:hover {
+  background-color: #0aa1e7;
+  color: white;
+}
+
+textarea{
+  font-size: 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+} */
+
+body{
+    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+  .contact-form {
+    background: #f8f9fa;
+    border-top-left-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%;
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+}
+
+
+
+
+</style>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
+        <div class="container">
+    
+          <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:45px;font-family: 'IBM Plex Sans', sans-serif;"><h2><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp Vishwakarma Hospital</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <h5><a class="nav-link" href="admin-panel.php" style="margin-top: 12px;margin-left:-685px" ><i class="fa fa-sign-out" aria-hidden="true"></i>Back to your account</a></h5>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+
+
+    <div class="container contact-form" style="font-family: 'IBM Plex Sans', sans-serif;">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+        </div>
+        <form method="post" action="feedback.php">
+            <h3>Drop Us a Feedback</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Doctor's Name *" value="" onkeydown="return alphaOnly(event);" required/>
+                    </div>
+                    <div class="form-group">
+                        <!-- <input type="email" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required /> -->
+                        <select name="txtQuality" id="quality" class="form-control" >
+                            <option value="" disabled selected>Your Remark *</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Average">Average</option>
+                            <option value="Below Average">Below Average</option>
+                            <option value="Unaaceptable">Unaaceptable</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" minlength="10" maxlength="10" required />
+                    </div>
+                    <div class="form-group" >
+                        <input type="submit" name="btnSubmit" class="btnContact"   value="Send Feedback" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group" >
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Feedback *" style="width: 100%; height: 150px;" required></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+ 
+</body>
+</html>
