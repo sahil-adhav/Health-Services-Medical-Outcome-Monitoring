@@ -22,10 +22,10 @@
         var check = function() {
             if (document.getElementById('password').value ==
                 document.getElementById('cpassword').value) {
-                document.getElementById('message').style.color = '#5dd05d';
+                document.getElementById('message').style.color = '#EF3B36';
                 document.getElementById('message').innerHTML = 'Matched';
             } else {
-                document.getElementById('message').style.color = '#f55252';
+                document.getElementById('message').style.color = '#EF3B36';
                 document.getElementById('message').innerHTML = 'Not Matching';
             }
         }
@@ -48,7 +48,7 @@
 
 <!------ Include the above in your HEAD tag ---------->
 
-<body>
+<body style="background: -webkit-linear-gradient(left, #EF3B36, #fff); background-size: cover;">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
 
@@ -94,16 +94,16 @@
                 <h1>Welcome</h1>
 
             </div>
-            <div class="col-md-9 register-right" style="margin-top: 40px;left: 80px;">
-                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%;">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
+            <div class="col-md-9 register-right " style="margin-top: 40px;left: 80px;">
+                <ul class="nav nav-tabs nav-justified btn-danger" id="myTab" role="tablist" style="width: 40%;">
+                    <li class="nav-item" style="color:red;">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"  aria-selected="false">Doctor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Receptionist</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" style="color:red;" aria-selected="false">Receptionist</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
@@ -125,16 +125,17 @@
 
                                     <div class="form-group">
                                         <div class="maxl">
-                                            <label class="radio inline">
-                                                <input type="radio" name="gender" value="Male" checked>
+                                            <label class="radio inline" >
+                                                <input  type="radio" name="gender" value="Male" checked>
+                                                
                                                 <span> Male </span>
                                             </label>
-                                            <label class="radio inline">
+                                            <label class="radio inline ">
                                                 <input type="radio" name="gender" value="Female">
                                                 <span>Female </span>
                                             </label>
                                         </div>
-                                        <a href="index1.php">Already have an account?</a>
+                                        <a href="index1.php" style="color:red;" >Already have an account?</a>
                                     </div>
                                 </div>
 
@@ -149,7 +150,7 @@
                                     <div class="form-group">
                                         <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password *" name="cpassword" onkeyup='check();' required /><span id='message'></span>
                                     </div>
-                                    <input type="submit" class="btnRegister" name="patsub1" onclick="return checklen();" value="Register"/> 
+                                    <input type="submit" class="btnRegister btn-danger" name="patsub1" onclick="return checklen();" value="Register"/> 
                                 </div>
 
                             </div>
@@ -171,7 +172,7 @@
                                         <input type="password" class="form-control" placeholder="Password *" name="password3" required />
                                     </div>
 
-                                    <input type="submit" class="btnRegister" name="docsub1" value="Login" />
+                                    <input type="submit" class="btnRegister btn-danger" name="docsub1" value="Login" />
                                 </div>
                             </div>
                         </form>
@@ -195,7 +196,7 @@
                                         <input type="password" class="form-control" placeholder="Password *" name="password2" required />
                                     </div>
 
-                                    <input type="submit" class="btnRegister" name="adsub" value="Login" />
+                                    <input type="submit" class="btnRegister btn-danger" name="adsub" value="Login" />
                                 </div>
                             </div>
                         </form>
