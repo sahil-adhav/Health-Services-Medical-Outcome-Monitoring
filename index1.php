@@ -30,7 +30,7 @@ include("header.php");
 }
 
   </style>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff); background-size: cover;">
+  <body style="background: -webkit-linear-gradient(left, #EF3B36, #fff); background-size: cover;">
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
     <div class="container">
 
@@ -79,7 +79,7 @@ include("header.php");
           <div class="card" style="font-family: 'IBM Plex Sans', sans-serif;">
             <div class="card-body">
               <center>
-                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#0062cc"></i>
+                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:red"></i>
                 <br>
               <h3 style="margin-top: 10%">Patient Login</h3><br>
               <form class="form-group" method="POST" action="func.php">
@@ -90,8 +90,8 @@ include("header.php");
                   <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
                 </div>
                 <div class="row">
-                 <div class="col-md-4"  style="padding-left: 160px;margin-top: 10%">
-                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center></div>           
+                 <div class="col-md-4"  style="padding-left: 160px;margin-top: 10% ">
+                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-danger"></center></div>           
                  <!--  <div class="col-md-8" style="margin-top: 10%">
                     <a href="index.php" class="btn btn-primary">Back</a></div>
                 </div> -->
