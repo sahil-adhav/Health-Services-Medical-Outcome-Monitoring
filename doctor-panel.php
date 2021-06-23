@@ -58,24 +58,24 @@ if(isset($_GET['cancel']))
 
     <style >
       .btn-outline-light:hover{
-        color: #25bef7;
-        background-color: #f8f9fa;
-        border-color: #f8f9fa;
+        color: #EF3B36;
+        background-color: #fff;
+        border-color: #fff;
       }
     </style>
 
   <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #EF3B36, #fff);
 }
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background-color: #EF3B36;
+    border-color: #fff;
 }
 .text-primary {
-    color: #342ac1!important;
+    color: #EF3B36!important;
 }
   </style>
 
@@ -132,7 +132,7 @@ if(isset($_GET['cancel']))
                         }
                       </script>                      
                       <p class="links cl-effect-1">
-                        <a href="#list-app" onclick="clickDiv('#list-app-list')">
+                        <a href="#list-app" style="color: red;"onclick="clickDiv('#list-app-list')">
                           Appointment List
                         </a>
                       </p>
@@ -147,7 +147,7 @@ if(isset($_GET['cancel']))
                       <h4 class="StepTitle" style="margin-top: 5%;"> Prescriptions</h4>
                         
                       <p class="links cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" style="color: red;"onclick="clickDiv('#list-pres-list')">
                           Prescription List
                         </a>
                       </p>
