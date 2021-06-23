@@ -74,7 +74,7 @@ if (isset($_POST['docsub1'])) {
 
     <style>
       .bg-primary {
-        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        background: -webkit-linear-gradient(left, #EF3B36, #FFFFFF);
       }
 
       .col-md-4 {
@@ -84,8 +84,8 @@ if (isset($_POST['docsub1'])) {
       .list-group-item.active {
         z-index: 2;
         color: #fff;
-        background-color: #342ac1;
-        border-color: #007bff;
+        background-color: #EF3B36;
+        border-color: #fff;
       }
 
       .text-primary {
@@ -101,8 +101,8 @@ if (isset($_POST['docsub1'])) {
       }
 
       .btn-primary {
-        background-color: #3c50c1;
-        border-color: #3c50c1;
+        background-color: #EF3B36;
+        border-color: #fff;
       }
     </style>
 
@@ -158,7 +158,7 @@ if (isset($_POST['docsub1'])) {
                 <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Doctor List</h4>
                       <script>
                         function clickDiv(id) {
@@ -166,7 +166,7 @@ if (isset($_POST['docsub1'])) {
                         }
                       </script>
                       <p class="links cl-effect-1">
-                        <a href="#list-doc" onclick="clickDiv('#list-doc-list')">
+                        <a href="#list-doc" style="color:#EF3B36" onclick="clickDiv('#list-doc-list')">
                           View Doctors
                         </a>
                       </p>
@@ -177,11 +177,11 @@ if (isset($_POST['docsub1'])) {
                 <div class="col-sm-4" style="left: -3%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Patient List</h4>
 
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                        <a href="#app-hist" style="color:#EF3B36"onclick="clickDiv('#list-pat-list')">
                           View Patients
                         </a>
                       </p>
@@ -193,11 +193,11 @@ if (isset($_POST['docsub1'])) {
                 <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Appointment Details</h4>
 
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-app-list')">
+                        <a href="#app-hist" style="color:#EF3B36" onclick="clickDiv('#list-app-list')">
                           View Appointments
                         </a>
                       </p>
@@ -210,11 +210,11 @@ if (isset($_POST['docsub1'])) {
                 <div class="col-sm-4" style="left: 13%;margin-top: 5%;">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Prescription List</h4>
 
                       <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" style="color:#EF3B36" onclick="clickDiv('#list-pres-list')">
                           View Prescriptions
                         </a>
                       </p>
@@ -226,13 +226,13 @@ if (isset($_POST['docsub1'])) {
                 <div class="col-sm-4" style="left: 18%;margin-top: 5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Manage Doctors</h4>
 
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')">Add Doctors</a>
+                        <a href="#app-hist" style="color:#EF3B36" onclick="clickDiv('#list-adoc-list')">Add Doctors</a>
                         &nbsp|
-                        <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')">
+                        <a href="#app-hist" style="color:#EF3B36" onclick="clickDiv('#list-ddoc-list')">
                           Delete Doctors
                         </a>
                       </p>
@@ -259,7 +259,7 @@ if (isset($_POST['docsub1'])) {
               <div class="col-sm-4" style="left: 31%">
                 <div class="panel panel-white no-radius text-center">
                   <div class="panel-body">
-                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                    <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-danger"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
                     <h4 class="StepTitle" style="margin-top: 5%;">Patients Feedback</h4>
                     <script>
                       function clickDiv(id) {
@@ -267,11 +267,11 @@ if (isset($_POST['docsub1'])) {
                       }
                     </script>
                     <p class="links cl-effect-1">
-                      <a href="#list-feedback" onclick="clickDiv('#list-feedback-list')">
+                      <a href="#list-feedback" style="color:#EF3B36" onclick="clickDiv('#list-feedback-list')">
                         Doctos's FB
                       </a>
-                      | <a href="#list-feedbackafter" onclick="clickDiv('#list-feedbackafter-list')">Routine FB</a>
-                      | <a href="#list-mess" onclick="clickDiv('#list-mess-list')">Contact Us</a>
+                      | <a href="#list-feedbackafter" style="color:#EF3B36" onclick="clickDiv('#list-feedbackafter-list')">Routine FB</a>
+                      | <a href="#list-mess" style="color:#EF3B36" onclick="clickDiv('#list-mess-list')">Contact Us</a>
                     </p>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ if (isset($_POST['docsub1'])) {
               <form class="form-group" action="doctorsearch.php" method="post">
                 <div class="row">
                   <div class="col-md-10"><input type="text" name="doctor_contact" placeholder="Enter Email ID" class="form-control"></div>
-                  <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-primary" value="Search"></div>
+                  <div class="col-md-2"><input type="submit" name="doctor_search_submit" class="btn btn-danger" value="Search"></div>
                 </div>
               </form>
             </div>
