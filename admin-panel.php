@@ -170,23 +170,23 @@ function get_specs()
 
     <style>
       .bg-primary {
-        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        background: -webkit-linear-gradient(left, #EF3B36, #fff);
       }
 
       .list-group-item.active {
         z-index: 2;
         color: #fff;
-        background-color: #342ac1;
-        border-color: #007bff;
+        background-color: #EF3B36;
+        border-color: #fff;
       }
 
       .text-primary {
-        color: #342ac1 !important;
+        color: #EF3B36 !important;
       }
 
       .btn-primary {
-        background-color: #3c50c1;
-        border-color: #3c50c1;
+        background-color: #EF3B36;
+        border-color: #EF3B36;
       }
     </style>
 
@@ -218,7 +218,7 @@ function get_specs()
     <h1 style="margin-left: 37%;  padding-bottom: 20px; font-family: 'IBM Plex Sans', sans-serif,;"> Welcome &nbsp<?php echo $username ?>
     </h1>
     <div class="row">
-      <div class="col-md-4" style="max-width:25%; margin-top: 3%">
+      <div class="col-md-4" style="max-width:25%; margin-top: 3% background-color:red;">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home">Dashboard</a>
           <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Book Appointment</a>
@@ -246,7 +246,7 @@ function get_specs()
                         }
                       </script>
                       <p class="links cl-effect-1">
-                        <a href="#list-home" onclick="clickDiv('#list-home-list')">
+                        <a href="#list-home" style="color: red;" onclick="clickDiv('#list-home-list')">
                           Book Appointment
                         </a>
                       </p>
@@ -261,7 +261,7 @@ function get_specs()
                       <h4 class="StepTitle" style="margin-top: 5%;">My Appointments</h2>
 
                         <p class="cl-effect-1">
-                          <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                          <a href="#app-hist" style="color: red;" onclick="clickDiv('#list-pat-list')">
                             View Appointment History
                           </a>
                         </p>
@@ -277,7 +277,7 @@ function get_specs()
                     <h4 class="StepTitle" style="margin-top: 5%;">Prescriptions</h2>
 
                       <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" style="color: red;" onclick="clickDiv('#list-pres-list')">
                           View Prescription List
                         </a>
                       </p>
@@ -292,10 +292,10 @@ function get_specs()
                     <h4 class="StepTitle" style="margin-top:5%;">Feedback</h2>
 
                       <p class="cl-effect-1">
-                        <a href="feedback.html" onclick="clickDiv('#list-feedback-list')">
+                        <a href="feedback.html" style="color: red;" onclick="clickDiv('#list-feedback-list')">
                            Doctor's Feedback 
                         </a>
-                        | <a href="feedbackafter.html" onclick="clickDiv('#list-feedbackafter-list')">Routine Feedback</a>
+                        | <a href="feedbackafter.html" style="color: red;" onclick="clickDiv('#list-feedbackafter-list')">Routine Feedback</a>
                       </p>
                   </div>
                 </div>
