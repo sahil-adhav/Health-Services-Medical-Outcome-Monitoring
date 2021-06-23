@@ -1,5 +1,5 @@
 body{
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #EF3B36, #FFFFFF);
 }
 
 html {
@@ -40,7 +40,7 @@ html {
     border: none;
     border-radius: 1rem;
     padding: 1.5%;
-    background: #0062cc;
+    background: #EF3B36;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -52,7 +52,7 @@ html {
     border-radius: 1rem;
     padding: 1.5%;
     color: #fff;
-    background-color: #0062cc;
+    background-color: #EF3B36;
     border: none;
     cursor: pointer;
 }
