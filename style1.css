@@ -1,5 +1,5 @@
 body {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    background: -webkit-linear-gradient(left, #EF3B36, #fff);
     background-size: cover;
 }
 
@@ -18,7 +18,7 @@ body {
     border-radius: 1.5rem;
     padding: 2%;
     width: 60%;
-    background: #f8f9fa;
+    background: #fff;
     font-weight: bold;
     color: #383d41;
     margin-top: 30%;
@@ -26,7 +26,7 @@ body {
     cursor: pointer;
 }
 .register-right{
-    background: #f8f9fa;
+    background: #fff;
     border-top-left-radius: 10% 50%;
     border-bottom-left-radius: 10% 50%;
 }
@@ -60,7 +60,7 @@ body {
     border: none;
     border-radius: 1.5rem;
     padding: 2%;
-    background: #0062cc;
+    background: #EF3B36;
     color: #fff;
     font-weight: 600;
     width: 50%;
@@ -69,7 +69,7 @@ body {
 .register .nav-tabs{
     margin-top: 3%;
     border: none;
-    background: #0062cc;
+    background: #EF3B36;
     border-radius: 1.5rem;
     width: 28%;
     float: right;
@@ -89,8 +89,8 @@ body {
 
 .register .nav-tabs .nav-link.active{
     width: 120px;
-    color: #0062cc;
-    border: 2px solid #0062cc;
+    color: #EF3B36;
+    border: 2px solid #EF3B36;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
 }
